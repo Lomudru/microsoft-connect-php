@@ -20,6 +20,16 @@ Install my project with composer
   composer require adnanhussainturki/microsoft-api-php
 ```
 
+Then modify the CurlFactory.php
+```php
+  // This
+  $conf[\CURLOPT_SSL_VERIFYHOST] = 2;
+  $conf[\CURLOPT_SSL_VERIFYPEER] = true;
+  // To This
+  $conf[\CURLOPT_SSL_VERIFYHOST] = 0;
+  $conf[\CURLOPT_SSL_VERIFYPEER] = false;
+```
+
 the change the signin.php
 
 ```
