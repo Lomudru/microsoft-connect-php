@@ -20,7 +20,7 @@ Install my project with composer
   composer require adnanhussainturki/microsoft-api-php
 ```
 
-Then modify the CurlFactory.php
+Then modify the CurlFactory.php in vendor\guzzlehttp\guzzle\src\Handler\CurlFactory.php
 ```php
   // This
   $conf[\CURLOPT_SSL_VERIFYHOST] = 2;
